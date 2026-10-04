@@ -11,3 +11,22 @@ function joinBizHub() {
         "Registration will be available soon."
     );
 }
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js")
+            .then(() => {
+                console.log("Mphazima BizHub is ready to install.");
+            })
+            .catch(error => {
+                console.log("Service worker error:", error);
+            if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js")
+            .then(() => {
+                console.log("Mphazima BizHub is ready to install.");
+            })
+            .catch(error => {
+                console.log("Service worker error:", error);
+            });
+    });
+            }
