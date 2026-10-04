@@ -1,32 +1,27 @@
 function showMessage() {
     alert(
-        "Mphazima BizHub opportunities are coming soon. " +
-        "You will be able to find business opportunities, tenders and other resources here."
+        "Business opportunities will be available here soon. " +
+        "Mphazima BizHub will provide access to tenders, opportunities and business resources."
     );
 }
 
 function joinBizHub() {
     alert(
         "Welcome to Mphazima BizHub! " +
-        "Registration will be available soon."
+        "Customer registration will be available soon."
     );
 }
+
+
+// Make Mphazima BizHub installable
 if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
+    window.addEventListener("load", function () {
         navigator.serviceWorker.register("./sw.js")
-            .then(() => {
-                console.log("Mphazima BizHub is ready to install.");
+            .then(function () {
+                console.log("Mphazima BizHub service worker registered.");
             })
-            .catch(error => {
-                console.log("Service worker error:", error);
-            if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-        navigator.serviceWorker.register("./sw.js")
-            .then(() => {
-                console.log("Mphazima BizHub is ready to install.");
-            })
-            .catch(error => {
-                console.log("Service worker error:", error);
+            .catch(function (error) {
+                console.log("Service worker registration failed:", error);
             });
     });
-            }
+}
