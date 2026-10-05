@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+  <rect width="512" height="512" rx="100" fill="#111827"/>
+
+  <circle cx="256" cy="220" r="145" fill="#2563EB"/>
+
+  <path
+    d="M145 300 L205 180 L255 275 L315 155 L370 300"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="35"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M170 340 L340 340"
+    stroke="#F59E0B"
+    stroke-width="20"
+    stroke-linecap="round"
+  />
+
+  <text
+    x="256"
+    y="405"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="42"
+    font-weight="bold"
+    fill="#FFFFFF">
+    MB
+  </text>
+
+  <text
+    x="256"
+    y="450"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="24"
+    font-weight="bold"
+    fill="#F59E0B">
+    BIZHUB
+  </text>
+
+</svg>
